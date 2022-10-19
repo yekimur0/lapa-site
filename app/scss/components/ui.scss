@@ -1,0 +1,23 @@
+.nav {
+    &__list {
+        display: flex;
+        align-items: center;
+        &-item {
+            list-style: none;
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+            a {
+                font-family: 'Raleway', sans-serif;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+                color: #FFFFFF;
+                transition: color 0.3s ease;
+                &:hover {
+                    color: rgb(235, 215, 149);
+                }
+            }
+        }
+    }
+}

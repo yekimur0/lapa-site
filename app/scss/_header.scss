@@ -1,0 +1,89 @@
+.header {
+    background-color: $lightbrown;
+    .header-top {
+        padding: 10px 0;
+        background-color: $darkBrown;
+        &__body {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &__actions {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+          
+        }
+        &__link {
+            font-weight: 400;
+            font-size: 14px;
+            color: #FFFFFF;
+            font-family: $fontRoboto;
+            position: relative;
+            display: flex;
+            align-items: center;
+            transition: color 0.3s ease;
+            &:hover {
+                color: rgb(235, 215, 149);
+            }
+            
+            &-phone {
+                &:before {
+                    content: '';
+                    width: 12px;
+                    height: 12px;
+                    background: url('../images/icons/phone.svg') center center no-repeat;
+                    padding-right: 10px;
+                }
+            }
+            &-mail {
+                &:before {
+                    content: '';
+                    width: 16px;
+                    height: 13px;
+                    background: url('../images/icons/mail.svg') center center no-repeat;
+                    padding-right: 10px;
+                }
+            }
+            &-map {
+                &:before {
+                    content: '';
+                    width: 13px;
+                    height: 16px;
+                    background: url('../images/icons/map.svg') center center no-repeat;
+                    padding-right: 10px;
+                }
+            }
+        }
+
+        &__callback {
+            a {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+                letter-spacing: 0.2em;
+                color: #FFFFFF;
+                display: inline-block;
+                padding-bottom: 2px;
+                border-bottom: 1px dashed #fff;
+                text-transform: uppercase;
+                margin-right: 30px;
+            }
+        }
+        &__social {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+
+    .header-bottom {
+        padding: 20px 0px 20px 0;
+        &__body {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+}
